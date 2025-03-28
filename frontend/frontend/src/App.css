@@ -1,0 +1,30 @@
+/* .Header{
+  align-items: center;
+  color:aquamarine;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+} 
+
+.body{
+  align-items: center;
+  color:aquamarine;
+  
+  padding: 50px;
+  gap: 100px;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.but{
+  
+  height: 40px;
+  width: 100px;
+  border-color: rgb(3, 4, 4);
+}
+.but:hover{
+  background-color: aquamarine;
+  color: black;
+} */
