@@ -7,15 +7,27 @@ import './components/styles.css';
 
 function App() {
   return (
-    <div className="app-container">
-      <nav className="navbar">
-        <ul className="nav-list">
-          <li><Link to="/" className="nav-link">Top Users</Link></li>
-          <li><Link to="/trending" className="nav-link">Trending Posts</Link></li>
-          <li><Link to="/feed" className="nav-link">Feed</Link></li>
+    <div className="min-h-screen bg-dark-bg">
+      <nav className="bg-dark-nav p-4 text-white">
+        <ul className="flex justify-center space-x-6 md:space-x-6 flex-col md:flex-row gap-4 md:gap-0">
+          <li>
+            <Link to="/" className="text-text-primary hover:text-hover-blue hover:underline">
+              Top Users
+            </Link>
+          </li>
+          <li>
+            <Link to="/trending" className="text-text-primary hover:text-hover-blue hover:underline">
+              Trending Posts
+            </Link>
+          </li>
+          <li>
+            <Link to="/feed" className="text-text-primary hover:text-hover-blue hover:underline">
+              Feed
+            </Link>
+          </li>
         </ul>
       </nav>
-      <div className="content-container">
+      <div className="max-w-4xl mx-auto p-4">
         <Routes>
           <Route path="/" element={<TopUsers />} />
           <Route path="/trending" element={<TrendingPosts />} />
